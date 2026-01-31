@@ -8,6 +8,8 @@ const validShortcuts = [
   'w', // close card or horizon
   'g',
   'h',
+  '[', // back navigation
+  ']', // forward navigation
   ...Array.from(Array(9).keys()).map((idx) => `${idx + 1}`)
 ]
 

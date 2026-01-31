@@ -23,8 +23,8 @@ For Windows & Linux, substitute ⌘ with Ctrl and ⌥ with alt
 | ⌘ +  1, 2 , 3 , 4 , 5 , 6 , 7 , 8 | Switch Tabs                    |
 | ⌘ + W                             | Close Active Tab               |
 | ⌘ + shift + T                     | Restore Recently Closed Tab    |
-| ⌘ + ←                             | Navigate backward              |
-| ⌘ + →                             | Navigate forward               |
+| ⌘ + [                             | Navigate backward              |
+| ⌘ + ]                             | Navigate forward               |
 | ⌘ + shift + c                     | Copy the URL of the active tab |
 | ⌘ + L                             | Edit the active URL            |
 

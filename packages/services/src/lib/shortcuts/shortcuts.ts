@@ -22,7 +22,9 @@ export enum ShortcutActions {
   TOGGLE_TAB_ORIENTATION = 'TOGGLE_TAB_ORIENTATION',
   INCREASE_PAGE_ZOOM = 'INCREASE_PAGE_ZOOM',
   DECREASE_PAGE_ZOOM = 'DECREASE_PAGE_ZOOM',
-  RESET_PAGE_ZOOM = 'RESET_PAGE_ZOOM'
+  RESET_PAGE_ZOOM = 'RESET_PAGE_ZOOM',
+  FORWARD_NAVIGATION = 'FORWARD_NAVIGATION',
+  BACKWARD_NAVIGATION = 'BACKWARD_NAVIGATION'
 }
 
 // Default shortcut definitions
@@ -137,7 +139,7 @@ export const defaultShortcuts: Record<ShortcutActions, ShortcutDefinition<Shortc
   },
   [ShortcutActions.INCREASE_PAGE_ZOOM]: {
     action: ShortcutActions.INCREASE_PAGE_ZOOM,
-    defaultCombo: 'CmdOrCtrl++',
+    defaultCombo: 'CmdOrCtrl+=',
     description: 'Increase tab Zoom',
     priority: ShortcutPriority.Normal
   },
@@ -151,6 +153,18 @@ export const defaultShortcuts: Record<ShortcutActions, ShortcutDefinition<Shortc
     action: ShortcutActions.RESET_PAGE_ZOOM,
     defaultCombo: 'CmdOrCtrl+0',
     description: 'Reset Tab Zoom',
+    priority: ShortcutPriority.Normal
+  },
+  [ShortcutActions.FORWARD_NAVIGATION]: {
+    action: ShortcutActions.FORWARD_NAVIGATION,
+    defaultCombo: 'CmdOrCtrl+Shift+]',
+    description: 'Navigate Forward',
+    priority: ShortcutPriority.Normal
+  },
+  [ShortcutActions.BACKWARD_NAVIGATION]: {
+    action: ShortcutActions.BACKWARD_NAVIGATION,
+    defaultCombo: 'CmdOrCtrl+Shift+[',
+    description: 'Navigate Backward',
     priority: ShortcutPriority.Normal
   }
 } as const
